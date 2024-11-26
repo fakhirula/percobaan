@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    
+    <form action="./result.html" method="post">
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama" name="te" placeholder="Masukan Nama Anda">
+
+        
+        <br>
+        <label for="t">Testing</label>
+        <input type="text" name="te" id="t">
+
+
+        <br>
+        <label for="email">Email : </label>
+        <input type="email" id="email" placeholder="Masukan Nama Email" autocomplete="off" >
+
+        <br>
+        <label for="password">Password :</label>
+        <input type="password" id="password" placeholder="********">
+
+        <br>
+        <label for="num">Jumlah : </label>
+        <!-- 
+        kita bisa atur angka minimal dengan attribute min 
+        kita bisa atur angka maximal dengan attribute max 
+        -->
+        <input type="number" name="" id="num" min="1" max="10">
+        
+
+        <br>
+        <label><input type="radio" name="jk">Laki-laki</label>
+        <label><input type="radio" name="jk">perempuan</input></label>
+        
+        <hr>
+        <label><input type="checkbox" name="">Menu 1</label>
+        <label><input type="checkbox" name="">Menu 2</label>
+        <label><input type="checkbox" name="">Menu 3</label>
+        <label><input type="checkbox" name="">Menu 4</label>
+        <label><input type="checkbox" name="">Menu 5</label>
+
+        <hr>
+        <label>
+            <input type="checkbox" name="">Menu 1
+            </input></label>
+        <label>
+            <input type="checkbox" name="">Menu 1</input></label><label><input type="checkbox" name="">Menu 1</input></label><label><input type="checkbox" name="">Menu 1</input></label><label><input type="checkbox" name="">Menu 1</input></label>
+
+        <!-- cara pakai emet 5 kali berurutan -->
+        <!-- hr+(label{Menu $}>input:checkbox)*5 -->
+
+        <!-- ini cara yang paling benar content nya di kanan
+        hr+(label>input:checkbox+{Menu $})*5 -->
+        <hr>
+        <label>Menu 1<input type="checkbox" name=""></label>
+        <label>Menu 2<input type="checkbox" name=""></label>
+        <label>Menu 3<input type="checkbox" name=""></label>
+        <label>Menu 4<input type="checkbox" name=""></label>
+        <label>Menu 5<input type="checkbox" name=""></label>
+
+        <hr>
+        <label><input type="checkbox" name="">Menu 1</label>
+        <label><input type="checkbox" name="">Menu 2</label>
+        <label><input type="checkbox" name="">Menu 3</label>
+        <label><input type="checkbox" name="">Menu 4</label>
+        <label><input type="checkbox" name="">Menu 5</label>
+
+
+        <br>
+        <select name="" id="">
+            <option value="">Indonesia</option>
+            <option value="">Malaysia</option>
+            <option value="">China</option>
+            <option value="">Singapura</option>
+            <option value="">Jepang</option>
+            <option value="">Korea Selatan</option>
+            <option value="">Korea Utara</option>
+            <option value="">Maladewa</option>
+            <option value="">Thailand</option>
+            <option value="">Vietnam</option>
+        </select>
+
+        <!-- cara cepat di select-->    
+        <!-- br+select>option{indonesia}*10 -->
+
+    
+        <!-- untuk mengisi tulisan untuk input bisa kita tulis di value nya -->
+
+        <textarea name="" id="" maxlength="5"></textarea>
+
+        <textarea name="" id=""></textarea>
+
+
+        <br>
+        <input type="date" name="" id="" size="13px">
+
+        <br>
+        <button>Tombol Button</button>
+        <!-- input tidak ada nya content nya, kita bisa isi di bagian value -->
+        <input type="submit" value="Tombol Submit">
+
+        <button type="reset">Tombol Reset</button>
+
+    </form>
+
+    </body>
+</html>
